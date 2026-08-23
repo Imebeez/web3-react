@@ -1,0 +1,27 @@
+{
+  "patches": {
+    "pkg:npm/loader-utils@2.0.2": {
+      "uuid": "de341499-34de-432d-ae8f-e3da55fd08c4",
+      "exportedAt": "Tue, 27 Jan 2026 13:00:02 GMT",
+      "files": {
+        "package/lib/parseQuery.js": {
+          "beforeHash": "abb4dcea78964d090e5bfa9bb1828bd3b764bbbe3be87a695ed4ee9ea7f36ef3",
+          "afterHash": "9aebfdf7fd449fc84818a962d7363beff4dffa6d4cc562eface41c25d62a63c0"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-76p3-8jx3-jpfq": {
+          "cves": [
+            "CVE-2022-37601"
+          ],
+          "summary": "Prototype pollution in webpack loader-utils",
+          "severity": "CRITICAL",
+          "description": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js."
+        }
+      },
+      "description": "",
+      "license": "MIT",
+      "tier": "free"
+    }
+  }
+}
